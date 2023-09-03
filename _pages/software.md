@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: Research projects 
+title: software
+permalink: /software/
+description: Sofware I have implemented
 nav: true
 nav_order: 2
-display_categories: [active, past]
+display_categories: [current, past]
 horizontal: true
 ---
 
@@ -15,7 +15,7 @@ horizontal: true
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
   <h2 class="category">{{ category }}</h2>
-  {%- assign categorized_projects = site.projects | where: "category", category -%}
+  {%- assign categorized_projects = site.software | where: "category", category -%}
   {%- assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}

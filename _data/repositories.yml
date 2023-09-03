@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jesusc
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - mar-platform/mar
+  - modelset/modelset-dataset
+  - modelset/modelset-py
+  - jesusc/rubytl
+  - anatlyzer/anatlyzer
+  - anatlyzer/a2l

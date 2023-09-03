@@ -15,9 +15,17 @@
         <div class="col-md-12">
         {%- endif -%}
           <div class="card-body">
-            <h3 class="card-title text-lowercase">{{ project.title }}</h3>
+            <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
             <div class="row ml-1 mr-1 p-0">
+	      <!-- url -->
+	      {%- if project.external_url -%}
+              <div class="project-url-icon" style="margin-right: 5px">
+                <div class="icon" data-toggle="tooltip" title="URL">
+                  <a href="{{ project.external_url }}"><i class="fa-solid fa-link url-icon"></i></a>
+                </div>
+              </div>
+              {%- endif -%}
               {%- if project.github -%}
               <div class="github-icon">
                 <div class="icon" data-toggle="tooltip" title="Code Repository">
@@ -31,7 +39,9 @@
                 {%- endif -%}
               </div>
               {%- endif -%}
-            </div>
+
+
+	    </div>
           </div>
         </div>
       </div>
